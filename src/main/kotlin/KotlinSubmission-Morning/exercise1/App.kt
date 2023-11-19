@@ -10,6 +10,15 @@ Lengkapi fungsi myProfile di bawah ini dengan membuat variabel dengan ketentuan 
 Dan Cetak setiap variabel ke layar saat variable myProfile di panggil
  */
 fun myProfile() {
+    val namaDepan : String = "Sugiarti"
+    val namaBelakang : String = "Irmasari"
+    val umur : Int = 20
+    val isSingle : Boolean = true
+
+    println("Nama Depan : $namaDepan")
+    println("Nama Belakang : $namaBelakang")
+    println("Umur saya : $umur")
+    println("Status Single : $isSingle")
 
 }
 
@@ -19,7 +28,14 @@ fun myProfile() {
  *  Lengkapi fungsi di bawah ini agar dapat mencetak nilai dari parameter-parameter yang ada dengan fungsi println
  */
 fun groupDetail(groupId: String, groupMember: List<Any>, session: String): Any {
-    return ""
+    println("Group ID : $groupId")
+    println("Group Member : $groupMember")
+    println("Session : $session")
+
+    return Any()
+    val id = "B Morning"
+    val member = listOf("Irma", "Fakhri", "Aufal", "Ahmad", "Fadli", "Raka", "Dandi", "Alif", "Fikri", "farhan")
+    val session = "Morning"
 }
 
 /**
@@ -29,8 +45,8 @@ fun groupDetail(groupId: String, groupMember: List<Any>, session: String): Any {
  *
  */
 fun myTeam(): List<Any> {
-
-    return listOf()
+    val Nawasena = listOf("Irma", "Fakhri", "Aufal", "Ahmad", "Fadli", "Raka", "Dandi", "Fikri", "ALif", "Farhan")
+    return listOf(Nawasena)
 }
 
 /**
@@ -41,10 +57,12 @@ fun myTeam(): List<Any> {
  *
  */
 fun totalMember(): Int {
-    val mentor = arrayOf<String>()
-    val countOfGroup = arrayOf<String>()
+    val mentor = arrayOf("Kak Reza", "Kak Reynaldi", "Kak Megi", "Kak Raihan", "Kak Jovian")
+    val countOfGroup = arrayOf("Irma", "Fakhri", "Aufal", "Ahmad", "Fadli", "Raka", "Dandi", "Fikri", "ALif", "Farhan")
 
-    return 0
+    val total = mentor.size + countOfGroup.size
+
+    return total
 }
 
 fun main() {
@@ -62,6 +80,7 @@ fun main() {
      *  Ubah nilai argumen-argumen dari fungsi groupDetail di bawah ini sesuai dengan data group kamu
      *
      */
-    groupDetail("", listOf(), "")
+
+    groupDetail("B Morning", listOf("Irma", "Fakhri", "Aufal", "Ahmad", "Fadli", "Raka", "Dandi", "Fikri", "ALif", "Farhan"), "Morning")
 
 }

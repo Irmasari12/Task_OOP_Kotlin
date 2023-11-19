@@ -1,13 +1,12 @@
 package id.infinitelearning.KotlinSubmission.exercise5
 
 fun main() {
-
     /**
      * Latihan 1
      * Buat variable dengan nama hero dibawah ini dan isi nilai variable tersebut dengan class Hero
      *
      */
-
+    val hero = Hero()
 
     /**
      * Latihan 2
@@ -15,18 +14,36 @@ fun main() {
      * Dan isi argumen-argumen / data dari parameter sesuai data diri Anda (Name, Age, Height)
      *
      */
-
-
-
+    hero.setProfile("Irma", 20, 153 )
     /**
      * Latihan 3
      * Tampilkan data profile dibawah ini, sebelum melakukan aktivitas
      *
      */
-
-
+    println("Data profile sebelum melakukan aktivitas")
+    hero.profile()
 
     /**
+     * Latihan 4
+     * Jalankan aktivitas-aktivitas dengan memanggil fungsi-fungsi sesuai challenge diatas
+     *
+     */
+    hero.jalan()
+    hero.lari()
+    hero.makan()
+    hero.minum()
+    hero.lompat()
+    hero.duduk()
+    /**
+     * Latihan 5
+     * Panggil fungsi profile dibawah ini untuk menampilkan status terkini setelah melakukan aktivitas
+     *
+     */
+    println("Status terkini setelah melakukan aktivitas: ")
+    hero.profile()
+
+
+      /**
     Challenge:
     ===============Class A Morning===============
     Uprising Moon Inteligent -> jalan 5x, lari 2x, makan 3x, minum 1x, lompat 3x, duduk 1x
@@ -60,20 +77,5 @@ fun main() {
     Freiwilliger -> jalan 2x, lari 2x, makan 1x, minum 3x, lompat 1x, duduk 2x
     **/
 
-    /**
-     * Latihan 4
-     * Jalankan aktivitas-aktivitas dengan memanggil fungsi-fungsi sesuai challenge diatas
-     *
-     */
 
-
-
-    /**
-     * Latihan 5
-     * Panggil fungsi profile dibawah ini untuk menampilkan status terkini setelah melakukan aktivitas
-     *
-     */
-
-
-
-}
+    }

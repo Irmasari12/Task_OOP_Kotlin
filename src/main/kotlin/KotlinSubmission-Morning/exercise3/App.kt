@@ -1,6 +1,6 @@
 package id.infinitelearning.KotlinSubmission.exercise3
 
-fun main() {
+
 
     /** Latihan 1
     Buatlah logika if untuk mengevaluasi nilai score dengan ketentuan:
@@ -17,4 +17,19 @@ fun main() {
      */
     // Buat di bawah sini
 
+fun main() {
+    val score = 90
+        val result: String = if (score >= 90) {
+            "Selamat! Anda mendapatkan nilai A"
+        } else if (score in 80..89) {
+            "Anda mendapatkan nilai B"
+        } else if (score in 70..79) {
+            "Anda mendapatkan nilai C"
+        } else if (score in 60..69) {
+            "Anda mendapatkan nilai D"
+        } else {
+            "Anda mendapatkan nilai E."
+        }
+
+        println(result)
 }
